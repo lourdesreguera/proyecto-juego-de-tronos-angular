@@ -1,0 +1,37 @@
+.gallery-characters {
+  display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    max-width: 1302px;
+    margin: 0 auto;
+}
+
+.gallery-characters__card {
+  width: calc(16.6% - 24px);
+  margin: 34px 12px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 260px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  h3 {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.403);
+    padding: 20px 0;
+    opacity: 0;
+    &:hover {
+      opacity: 100;
+    }
+  }
+}
