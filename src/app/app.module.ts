@@ -13,14 +13,11 @@ import { FooterComponent } from './shared/component/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     HomePageComponent,
     CharactersPageComponent,
     HousesPageComponent,
     ChronologyComponent,
     FooterComponent
-
-
   ],
   imports: [
     BrowserModule,
