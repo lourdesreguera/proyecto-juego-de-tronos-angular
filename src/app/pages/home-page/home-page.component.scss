@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Game of Thrones';
+  src: url(../../../assets/fonts/GameofThrones.ttf);
+}
+
+.home {
+  background-image: url(../../../assets/images/bcg.svg);
+  background-size: cover;
+  height: -webkit-fill-available;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__heading {
+  font-family: "Game of Thrones";
+  color: white;
+  font-weight: 100;
+  font-size: 110px;
+  max-width: 1013px;
+  text-align: center;
+  letter-spacing: 1.9px;
+}
