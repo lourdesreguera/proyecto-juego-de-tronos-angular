@@ -1,3 +1,4 @@
+import { HousesServiceService } from './../../shared/services/houses-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HousesPageComponent implements OnInit {
 
-  constructor() { }
+  houses = [];
+
+  constructor(private housesService: HousesServiceService) { }
 
   ngOnInit(): void {
-  }
+    this.housesService.getHouses().subscribe((res: any) => {
 
+      console.log(res)
+
+      this.houses = res.data;
+
+    });
+  }
+  
 }
