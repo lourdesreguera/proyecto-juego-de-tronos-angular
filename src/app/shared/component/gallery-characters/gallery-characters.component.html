@@ -1,4 +1,6 @@
-<section class="gallery-characters">
+<app-search [characters]="characters" ></app-search>
+<a routerLink='/'>Home</a>
+<section id="gallery-characters" class="gallery-characters" >
   <div
     *ngFor="let character of characters"
     class="gallery-characters__card"

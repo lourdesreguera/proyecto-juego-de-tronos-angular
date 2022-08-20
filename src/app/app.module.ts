@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/component/footer/footer.component';
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
+import { SearchComponent } from './shared/component/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CharacterDetailPageComponent } from './pages/character-detail-page/char
     ChronologyComponent,
     FooterComponent,
     GalleryCharactersComponent,
-    CharacterDetailPageComponent
+    CharacterDetailPageComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
