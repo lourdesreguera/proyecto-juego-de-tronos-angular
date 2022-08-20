@@ -1,17 +1,46 @@
-.gallery-houses__card{
-   
-   width: 300px;
-}
-
 .gallery-houses{
     display: flex;
     flex-wrap: wrap;
-
-  
-}
-
-h3{
     color: #fff;
-    font-family: "Game of Thrones";
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 50px;
+    text-align: center;
+    // width: 100%;
+    // margin: 60px;
 }
 
+.gallery-houses__card{
+    // width: calc(16.66% - 30px);
+    // margin: 34px 12px;
+    // height: 250px;
+    
+    width: calc(16% - 20px);
+    padding: 14px;
+    height: 300px;
+    text-align: center;
+
+}
+
+img {
+
+    width: 200px;
+    height: 240px;
+    margin: 0 0 0 0px;
+
+  }
+
+a{
+    width: 330px;
+    height: 44px;
+    margin: 0 321px 2px 342px;
+    font-family: GameofThrones;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+
+}
