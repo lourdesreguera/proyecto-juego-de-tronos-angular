@@ -10,6 +10,7 @@ import { ChronologyComponent } from './pages/chronology/chronology.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/component/footer/footer.component';
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
+import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GalleryCharactersComponent } from './shared/component/gallery-character
     HousesPageComponent,
     ChronologyComponent,
     FooterComponent,
-    GalleryCharactersComponent
+    GalleryCharactersComponent,
+    CharacterDetailPageComponent
   ],
   imports: [
     BrowserModule,

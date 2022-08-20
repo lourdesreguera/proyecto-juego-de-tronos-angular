@@ -7,9 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GalleryCharactersComponent implements OnInit {
   @Input() characters : any
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
