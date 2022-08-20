@@ -9,6 +9,7 @@ import { HousesPageComponent } from './pages/houses-page/houses-page.component';
 import { ChronologyComponent } from './pages/chronology/chronology.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/component/footer/footer.component';
+import { GalleryHousesComponent } from './shared/component/gallery-houses/gallery-houses.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './shared/component/footer/footer.component';
     CharactersPageComponent,
     HousesPageComponent,
     ChronologyComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryHousesComponent
   ],
   imports: [
     BrowserModule,
