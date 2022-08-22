@@ -6,6 +6,7 @@
     class="gallery-characters__card"
   >
     <a routerLink='/characters/{{character.name}}'>{{ character.name }}</a>
+    <img *ngIf="!character.image" src="{{ imgDefault }}" class="default" />
     <img src="{{ character.image }}" />
   </div>
 </section>

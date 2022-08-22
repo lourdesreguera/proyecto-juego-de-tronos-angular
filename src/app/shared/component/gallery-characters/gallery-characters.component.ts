@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GalleryCharactersComponent implements OnInit {
   @Input() characters : any
 
+  imgDefault : any = '../../../../assets/images/default.jpg'
+
   constructor() { }
 
   ngOnInit(): void {
