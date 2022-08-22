@@ -1,7 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/styles/fonts';
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   background-color: black;
+  font-family: var(--font);
+  font-size: 12px;
 }
