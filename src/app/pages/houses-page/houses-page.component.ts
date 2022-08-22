@@ -1,3 +1,5 @@
+import { ChronologyComponent } from './../chronology/chronology.component';
+import { HousesService } from './../../shared/services/houses.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HousesPageComponent implements OnInit {
 
-  constructor() { }
+  houses = [];
+
+  constructor(private housesService: HousesService) { }
 
   ngOnInit(): void {
-  }
+    this.housesService.getHouses().subscribe((res: any) => {
 
+      this.houses = res;
+
+    });
+  }
+  
 }

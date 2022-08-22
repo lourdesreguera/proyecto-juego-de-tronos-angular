@@ -1,0 +1,11 @@
+<section class="gallery-houses">
+    <div
+        *ngFor="let house of houses"
+        class="gallery-houses__card"
+    >
+        <img src="{{ house.logoURL }}" />
+        <h3>{{ house.name }}</h3>
+    </div>
+</section>
+
+<app-footer></app-footer>
