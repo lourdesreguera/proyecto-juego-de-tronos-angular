@@ -9,6 +9,9 @@ import { HousesPageComponent } from './pages/houses-page/houses-page.component';
 import { ChronologyComponent } from './pages/chronology/chronology.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/component/footer/footer.component';
+import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
+import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
+import { SearchComponent } from './shared/component/search/search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { FooterComponent } from './shared/component/footer/footer.component';
     CharactersPageComponent,
     HousesPageComponent,
     ChronologyComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryCharactersComponent,
+    CharacterDetailPageComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

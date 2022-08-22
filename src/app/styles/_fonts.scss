@@ -4,5 +4,12 @@
 }
 
 :root {
-  --heading: 'Game of Thrones';
+  --font: 'Game of Thrones';
+}
+
+.font {
+  font-family: var(--font);
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 1.9px;
 }
