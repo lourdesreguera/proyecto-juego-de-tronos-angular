@@ -10,6 +10,8 @@ import { ChronologyComponent } from './pages/chronology/chronology.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/component/footer/footer.component';
 import { GalleryHousesComponent } from './shared/component/gallery-houses/gallery-houses.component';
+import * as SimpleBar from 'simplebar';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { GalleryHousesComponent } from './shared/component/gallery-houses/galler
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SimpleBar
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
