@@ -30,8 +30,16 @@
     background-color: rgba(0, 0, 0, 0.403);
     padding: 20px 0;
     opacity: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
     &:hover {
       opacity: 100;
     }
   }
+}
+
+.footer__char {
+  background-color: #000;
 }
