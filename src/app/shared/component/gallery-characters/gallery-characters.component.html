@@ -1,11 +1,11 @@
-<app-search [characters]="characters" ></app-search>
-<a routerLink='/'>Home</a>
-<section id="gallery-characters" class="gallery-characters" >
-  <div
-    *ngFor="let character of characters"
-    class="gallery-characters__card"
-  >
-    <a routerLink='/characters/{{character.name}}'>{{ character.name }}</a>
+<div class="header__container">
+  <app-search [characters]="characters"></app-search>
+  <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
+</div>
+<section id="gallery-characters" class="gallery-characters">
+  <div *ngFor="let character of characters" class="gallery-characters__card">
+    <a routerLink="/characters/{{ character.name }}">{{ character.name }}</a>
+    <img *ngIf="!character.image" src="{{ imgDefault }}" class="default" />
     <img src="{{ character.image }}" />
   </div>
 </section>

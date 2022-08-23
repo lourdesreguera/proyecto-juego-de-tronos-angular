@@ -1,1 +1,16 @@
-<p>character-detail-page works!</p>
+<img src="{{character.image}}">
+<h1>{{character.name}}</h1>
+<section>
+  <div>
+    <h2>casa</h2>
+    <p>{{character.house}}</p>
+  </div>
+  <div>
+    <h2>alianzas</h2>
+    <p *ngFor="let allegiance of character.allegiances">{{allegiance}}</p>
+  </div>
+  <div>
+    <h2>apariciones</h2>
+    <p *ngFor="let appearance of character.appearances">{{appearance}}</p>
+  </div>
+</section>

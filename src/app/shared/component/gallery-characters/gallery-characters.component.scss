@@ -1,8 +1,18 @@
-.gallery-characters {
+.header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 30px;
+  }
+}
+
+.gallery-characters {
+    display: flex;
     flex-wrap: wrap;
     color: #fff;
-    max-width: 1302px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -40,6 +50,7 @@
   }
 }
 
-.footer__char {
-  background-color: #000;
+.default {
+  bottom: 50%;
 }
+

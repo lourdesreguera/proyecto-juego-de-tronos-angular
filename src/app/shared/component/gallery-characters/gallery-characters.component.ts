@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-gallery-characters',
@@ -6,12 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./gallery-characters.component.scss']
 })
 export class GalleryCharactersComponent implements OnInit {
-  @Input() characters : any
+  @Input() characters: any
 
-  constructor() { }
+  imgDefault: any = '../../../../assets/images/default.jpg'
 
-  ngOnInit(): void {
+  constructor () {}
 
-  }
-
+  ngOnInit (): void {}
 }

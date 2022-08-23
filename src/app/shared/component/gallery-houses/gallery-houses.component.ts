@@ -9,6 +9,8 @@ export class GalleryHousesComponent implements OnInit {
 
   @Input() houses: any;
 
+  imgDefault = '../../../../assets/images/scudo.webp'
+
   constructor() { }
 
   ngOnInit(): void {
