@@ -1,0 +1,44 @@
+.characterDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 30px 0 50px 0;
+  }
+}
+
+.characterDetails__img {
+  height: 300px;
+  position: relative;
+  width: 220px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.characterDetails__info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  div {
+    width: 16.6667%;
+    text-align: center;
+    max-height: 194px;
+    h2 {
+      font-weight: 100;
+      margin-bottom: 44px;
+    }
+  }
+}
+
+.overflow {
+  overflow-y: scroll;
+}

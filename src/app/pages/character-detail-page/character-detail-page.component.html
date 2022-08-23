@@ -1,16 +1,40 @@
-<img src="{{character.image}}">
-<h1>{{character.name}}</h1>
-<section>
-  <div>
-    <h2>casa</h2>
-    <p>{{character.house}}</p>
+<section class="characterDetails">
+  <div class="characterDetails__img">
+    <img src="{{ character.image }}" />
   </div>
-  <div>
-    <h2>alianzas</h2>
-    <p *ngFor="let allegiance of character.allegiances">{{allegiance}}</p>
-  </div>
-  <div>
-    <h2>apariciones</h2>
-    <p *ngFor="let appearance of character.appearances">{{appearance}}</p>
+  <h1 class="font">{{ character.name }}</h1>
+  <div class="characterDetails__info">
+    <div>
+      <h2>casa</h2>
+      <p class="font-data">{{ character.house }}</p>
+    </div>
+    <div>
+      <h2>alianzas</h2>
+      <p *ngFor="let allegiance of character.allegiances" class="font-data">
+        {{ allegiance }}
+      </p>
+    </div>
+    <div class="overflow">
+      <h2>apariciones</h2>
+      <p *ngFor="let appearance of character.appearances" class="font-data">
+        {{ appearance }}
+      </p>
+    </div>
+    <div>
+      <h2>padre</h2>
+      <p class="font-data">{{ character.father }}</p>
+    </div>
+    <div>
+      <h2>hermanos</h2>
+      <p *ngFor="let sibling of character.siblings" class="font-data">
+        {{ sibling }}
+      </p>
+    </div>
+    <div class="overflow">
+      <h2>titulos</h2>
+      <p *ngFor="let title of character.titles" class="font-data">
+        {{ title }}
+      </p>
+    </div>
   </div>
 </section>
