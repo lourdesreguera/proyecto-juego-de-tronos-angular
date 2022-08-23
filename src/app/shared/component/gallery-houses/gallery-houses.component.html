@@ -8,7 +8,7 @@
         class="gallery-houses__card"
     >
 
-        <img src="{{ house.logoURL }}" />
+        <!-- <img src="{{ house.logoURL }}" /> -->
 
         <img *ngIf="!house.logoURL" src="{{imgDefault}}" />
         <img  *ngIf="house.logoURL" src="{{ house.logoURL }}" />
