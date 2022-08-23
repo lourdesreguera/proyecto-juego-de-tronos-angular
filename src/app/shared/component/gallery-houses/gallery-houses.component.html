@@ -1,10 +1,17 @@
+<div class="header__container">
+    <!-- <app-search [houses]="houses"></app-search> -->
+    <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
+</div>
 <section class="gallery-houses">
     <div
         *ngFor="let house of houses"
         class="gallery-houses__card"
     >
+
+        <img src="{{ house.logoURL }}" />
+
         <img *ngIf="!house.logoURL" src="{{imgDefault}}" />
-        <img  *ngIf="house.logoURL" src="{{ house.logoURL }}" />
+        <img  *ngIf="house.logoURL" src="{{ house.logoURL }}" /
         <a>{{ house.name }}</a>
     </div>
 </section>

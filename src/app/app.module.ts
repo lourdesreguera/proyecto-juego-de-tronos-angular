@@ -13,7 +13,6 @@ import { GalleryCharactersComponent } from './shared/component/gallery-character
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 import { SearchComponent } from './shared/component/search/search.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +31,7 @@ import { SearchComponent } from './shared/component/search/search.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
