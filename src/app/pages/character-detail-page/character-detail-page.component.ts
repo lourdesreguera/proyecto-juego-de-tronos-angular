@@ -1,5 +1,6 @@
-import { CharacterDetailService } from './../../shared/services/character-detail.service';
-import { Component, OnInit } from '@angular/core';
+import { CharacterDetailService } from './../../shared/services/character-detail.service'
+import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-character-detail-page',
@@ -7,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-detail-page.component.scss']
 })
 export class CharacterDetailPageComponent implements OnInit {
+  character: any = []
 
-  character = []
-  constructor(private characterDetailService: CharacterDetailService) { }
+  constructor (
+    private route: ActivatedRoute,
+    private characterDetailService: CharacterDetailService
+  ) {}
 
-  ngOnInit(): void {
-    this.characterDetailService.getCharacterDetail().subscribe((characterData: any) => {
-      console.log(characterData)
-      this.character = characterData
+  ngOnInit (): void {
+    this.route.paramMap.subscribe(params => {
+      const name = params.get('name')
+      this.characterDetailService
+        .getCharacterDetail(name)
+        .subscribe(character => {
+          this.character = character
+        })
     })
   }
-
 }

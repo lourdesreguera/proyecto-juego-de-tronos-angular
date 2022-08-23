@@ -5,13 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CharacterDetailService {
-  characterName : any = ''
-
+  characterName : any
 
   constructor(private http: HttpClient) { }
 
-  getCharacterDetail() {
-    console.log(this.characterName)
-    return this.http.get(`https://api.got.show/api/show/characters/${this.characterName}`)
+  getCharacterDetail(characterName : any) {
+      return this.http.get(`https://api.got.show/api/show/characters/${characterName}`)
   }
 }
