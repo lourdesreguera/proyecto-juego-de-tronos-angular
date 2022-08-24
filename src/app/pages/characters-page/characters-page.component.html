@@ -1,4 +1,5 @@
 
 <app-gallery-characters [characters] = "characters"></app-gallery-characters>
+<app-gallery-characters (filteredChar)="viewFilter($event)" [characters]="filterChar"></app-gallery-characters>
 <app-footer></app-footer>
 

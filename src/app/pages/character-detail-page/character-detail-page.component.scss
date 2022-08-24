@@ -1,3 +1,11 @@
+ngx-simplebar {
+  height: 140px;
+}
+
+::ng-deep .simplebar-scrollbar::before {
+  background-color: #fff !important;
+}
+
 .characterDetails {
   display: flex;
   flex-direction: column;
@@ -17,7 +25,7 @@
 }
 
 .characterDetails__img {
-  height: 300px;
+  height: 260px;
   position: relative;
   width: 220px;
   margin-top: 80px;
@@ -28,17 +36,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  div {
-    width: 16.6667%;
-    text-align: center;
-    max-height: 194px;
-    h2 {
-      font-weight: 100;
-      margin-bottom: 44px;
-    }
-  }
 }
 
-.overflow {
-  overflow-y: scroll;
+.characterDetails__info--text {
+  width: 100%;
+  width: 16.6667%;
+  text-align: center;
+  h2 {
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
 }
