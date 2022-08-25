@@ -12,7 +12,8 @@
 
         <img *ngIf="!house.logoURL" src="{{imgDefault}}" />
         <img  *ngIf="house.logoURL" src="{{ house.logoURL }}" />
-        <a>{{ house.name }}</a>
+        <a routerLink="/houses/{{ house.name }}">{{ house.name }}</a>
+
     </div>
 </section>
 

@@ -12,6 +12,7 @@ import { GalleryHousesComponent } from './shared/component/gallery-houses/galler
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 import { SearchComponent } from './shared/component/search/search.component';
+import { HouseDetailPageComponent } from './pages/house-detail-page/house-detail-page.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { FormsModule } from '@angular/forms';
 
@@ -27,11 +28,13 @@ import { FormsModule } from '@angular/forms';
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
     SearchComponent,
+    HouseDetailPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
     SimplebarAngularModule,
     FormsModule
   ],

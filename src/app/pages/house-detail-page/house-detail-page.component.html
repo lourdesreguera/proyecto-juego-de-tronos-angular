@@ -1,0 +1,35 @@
+<a routerLink="/houses"> ← Volver</a>
+<section class="houseDetails">
+    <div class="houseDetails__img">
+        <img src="{{house[0].logoURL}}">
+    </div>
+    <h1 class="font">{{house[0].name}}</h1>
+    <section>
+        <div class="houses__info">
+            <div class="houseDetails__info--text">
+                <h2>LEMA</h2>
+                <p>{{house[0].words}}</p>
+            </div>
+            <div class="houseDetails__info--text">
+                <h2>SEDE</h2>
+                <p *ngFor="let item of house[0].seat" >{{item}}</p>
+            </div>
+            <div class="houseDetails__info--text">
+                <h2>REGION</h2>
+                <p *ngFor="let item of house[0].religion">{{item}}</p>
+            </div>
+            <div class="houseDetails__info--text">
+                <h2>ALIANZAS</h2>
+                <p *ngFor="let item of house[0].allegiance">{{item}}</p>
+            </div>
+            <div class="houseDetails__info--text">
+                <h2>RELIGIONES</h2>
+                <p *ngFor="let item of house[0].religion">{{item}}</p>
+            </div>
+            <div class="houseDetails__info--text">
+                <h2>FUNDACION</h2>
+                <p>{{house[0].createdAt}}</p>
+        </div>
+    </div>
+    </section>
+</section>
