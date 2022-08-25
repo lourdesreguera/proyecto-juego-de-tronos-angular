@@ -9,62 +9,50 @@
     <div class="characterDetails__info--text">
       <h2>casa</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p class="font-data">{{ character.house }}</p>
-        </div>
+        <p class="font-data">{{ character.house }}</p>
       </ngx-simplebar>
     </div>
 
     <div class="characterDetails__info--text">
       <h2>alianzas</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p *ngFor="let allegiance of character.allegiances" class="font-data">
-            {{ allegiance }}
-          </p>
-        </div>
+        <p *ngFor="let allegiance of character.allegiances" class="font-data">
+          {{ allegiance }}
+        </p>
       </ngx-simplebar>
     </div>
 
     <div class="characterDetails__info--text">
       <h2>apariciones</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p *ngFor="let appearance of character.appearances" class="font-data">
-            {{ appearance }}
-          </p>
-        </div>
+        <p *ngFor="let appearance of character.appearances" class="font-data">
+          {{ appearance }}
+        </p>
       </ngx-simplebar>
     </div>
 
     <div class="characterDetails__info--text">
       <h2>padre</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p class="font-data">{{ character.father }}</p>
-        </div>
+        <p class="font-data">{{ character.father }}</p>
       </ngx-simplebar>
     </div>
 
     <div class="characterDetails__info--text">
       <h2>hermanos</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p *ngFor="let sibling of character.siblings" class="font-data">
-            {{ sibling }}
-          </p>
-        </div>
+        <p *ngFor="let sibling of character.siblings" class="font-data">
+          {{ sibling }}
+        </p>
       </ngx-simplebar>
     </div>
 
     <div class="characterDetails__info--text">
       <h2>titulos</h2>
       <ngx-simplebar [options]="options">
-        <div *ngFor="let number of numbers">
-          <p *ngFor="let title of character.titles" class="font-data">
-            {{ title }}
-          </p>
-        </div>
+        <p *ngFor="let title of character.titles" class="font-data">
+          {{ title }}
+        </p>
       </ngx-simplebar>
     </div>
   </div>

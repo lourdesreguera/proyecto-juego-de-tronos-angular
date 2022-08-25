@@ -9,8 +9,7 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class CharacterDetailPageComponent implements OnInit {
   character: any = [];
-  numbers = Array(1).fill(0);
-  options = { autoHide: false, scrollbarMinSize: 100 };
+  options = { autoHide: false, scrollbarMinSize: 50 };
 
   constructor (
     private route: ActivatedRoute,

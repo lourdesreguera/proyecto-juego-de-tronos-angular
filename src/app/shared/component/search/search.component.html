@@ -1,8 +1,8 @@
-<input type="text" #text (change)="findChar(text.value)" />
-<!-- <a routerLink='/'>Home</a> -->
-<!-- <section class="gallery-characters">
+<input type="text" (change)="findChar($event)" />
+<a routerLink='/'>Home</a>
+<section class="gallery-characters">
   <div *ngFor="let char of newChar" class='gallery-characters__card'>
     <a routerLink="/characters/{{ char.name }}">{{ char.name }}</a>
     <img src="{{ char.image }}" />
   </div>
-</section> -->
+</section>

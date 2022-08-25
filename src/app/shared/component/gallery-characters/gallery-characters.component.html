@@ -4,7 +4,6 @@
   <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
 </div>
 <ngx-simplebar [options]="options">
-  <div *ngFor="let number of numbers">
     <section id="gallery-characters" class="gallery-characters">
       <div
         *ngFor="let character of characters"
@@ -21,6 +20,5 @@
         </a>
       </div>
     </section>
-  </div>
 </ngx-simplebar>
 </main>
