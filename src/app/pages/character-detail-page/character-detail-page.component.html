@@ -1,59 +1,64 @@
-<a routerLink="/characters">Volver</a>
-<section class="characterDetails">
-  <div class="characterDetails__img">
-    <img src="{{ character.image }}" />
-  </div>
-  <h1 class="font">{{ character.name }}</h1>
-
-  <div class="characterDetails__info">
-    <div class="characterDetails__info--text">
-      <h2>casa</h2>
-      <ngx-simplebar [options]="options">
-        <p class="font-data">{{ character.house }}</p>
-      </ngx-simplebar>
+<section class="characterDetails__container">
+  <a routerLink="/characters" class="back">
+    <img src="../../../assets/images/arrow.svg" />
+    <p class="font-data">Volver</p></a
+  >
+  <section class="characterDetails">
+    <div class="characterDetails__img">
+      <img src="{{ character.image }}" />
     </div>
+    <h1 class="font">{{ character.name }}</h1>
 
-    <div class="characterDetails__info--text">
-      <h2>alianzas</h2>
-      <ngx-simplebar [options]="options">
-        <p *ngFor="let allegiance of character.allegiances" class="font-data">
-          {{ allegiance }}
-        </p>
-      </ngx-simplebar>
-    </div>
+    <div class="characterDetails__info">
+      <div class="characterDetails__info--text">
+        <h2>casa</h2>
+        <ngx-simplebar [options]="options">
+          <p class="font-data">{{ character.house }}</p>
+        </ngx-simplebar>
+      </div>
 
-    <div class="characterDetails__info--text">
-      <h2>apariciones</h2>
-      <ngx-simplebar [options]="options">
-        <p *ngFor="let appearance of character.appearances" class="font-data">
-          {{ appearance }}
-        </p>
-      </ngx-simplebar>
-    </div>
+      <div class="characterDetails__info--text">
+        <h2>alianzas</h2>
+        <ngx-simplebar [options]="options">
+          <p *ngFor="let allegiance of character.allegiances" class="font-data">
+            {{ allegiance }}
+          </p>
+        </ngx-simplebar>
+      </div>
 
-    <div class="characterDetails__info--text">
-      <h2>padre</h2>
-      <ngx-simplebar [options]="options">
-        <p class="font-data">{{ character.father }}</p>
-      </ngx-simplebar>
-    </div>
+      <div class="characterDetails__info--text">
+        <h2>apariciones</h2>
+        <ngx-simplebar [options]="options">
+          <p *ngFor="let appearance of character.appearances" class="font-data">
+            {{ appearance }}
+          </p>
+        </ngx-simplebar>
+      </div>
 
-    <div class="characterDetails__info--text">
-      <h2>hermanos</h2>
-      <ngx-simplebar [options]="options">
-        <p *ngFor="let sibling of character.siblings" class="font-data">
-          {{ sibling }}
-        </p>
-      </ngx-simplebar>
-    </div>
+      <div class="characterDetails__info--text">
+        <h2>padre</h2>
+        <ngx-simplebar [options]="options">
+          <p class="font-data">{{ character.father }}</p>
+        </ngx-simplebar>
+      </div>
 
-    <div class="characterDetails__info--text">
-      <h2>titulos</h2>
-      <ngx-simplebar [options]="options">
-        <p *ngFor="let title of character.titles" class="font-data">
-          {{ title }}
-        </p>
-      </ngx-simplebar>
+      <div class="characterDetails__info--text">
+        <h2>hermanos</h2>
+        <ngx-simplebar [options]="options">
+          <p *ngFor="let sibling of character.siblings" class="font-data">
+            {{ sibling }}
+          </p>
+        </ngx-simplebar>
+      </div>
+
+      <div class="characterDetails__info--text">
+        <h2>titulos</h2>
+        <ngx-simplebar [options]="options">
+          <p *ngFor="let title of character.titles" class="font-data">
+            {{ title }}
+          </p>
+        </ngx-simplebar>
+      </div>
     </div>
-  </div>
+  </section>
 </section>

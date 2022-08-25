@@ -13,6 +13,7 @@ import { GalleryCharactersComponent } from './shared/component/gallery-character
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 import { SearchComponent } from './shared/component/search/search.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SimplebarAngularModule } from 'simplebar-angular';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SimplebarAngularModule
+    SimplebarAngularModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

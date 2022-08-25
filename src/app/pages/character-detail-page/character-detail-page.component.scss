@@ -6,6 +6,23 @@ ngx-simplebar {
   background-color: #fff !important;
 }
 
+.back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  padding: 20px;
+  img {
+    width: 25px;
+    margin-right: 15px;
+  }
+}
+
+.characterDetails__container {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .characterDetails {
   display: flex;
   flex-direction: column;
@@ -28,7 +45,7 @@ ngx-simplebar {
   height: 260px;
   position: relative;
   width: 220px;
-  margin-top: 80px;
+  margin-top: 30px;
   overflow: hidden;
 }
 
