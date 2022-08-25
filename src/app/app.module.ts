@@ -12,6 +12,7 @@ import { GalleryHousesComponent } from './shared/component/gallery-houses/galler
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 import { SearchComponent } from './shared/component/search/search.component';
+import { HouseDetailPageComponent } from './pages/house-detail-page/house-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,16 @@ import { SearchComponent } from './shared/component/search/search.component';
     GalleryHousesComponent,
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
-    SearchComponent
-
+    SearchComponent,
+    HouseDetailPageComponent
+    
+ 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    
 
   ],
   providers: [],
