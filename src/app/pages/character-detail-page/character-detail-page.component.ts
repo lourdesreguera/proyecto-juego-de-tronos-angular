@@ -8,11 +8,12 @@ import { ActivatedRoute } from '@angular/router'
   styleUrls: ['./character-detail-page.component.scss']
 })
 export class CharacterDetailPageComponent implements OnInit {
-  character: any = []
+  character: any = [];
+  options = { autoHide: false, scrollbarMinSize: 50 };
 
   constructor (
     private route: ActivatedRoute,
-    private characterDetailService: CharacterDetailService
+    private characterDetailService: CharacterDetailService,
   ) {}
 
   ngOnInit (): void {

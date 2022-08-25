@@ -3,8 +3,14 @@
   src: url(../../assets/fonts/GameofThrones.ttf);
 }
 
+@font-face {
+  font-family: Lato;
+  src: url(../../assets//fonts/Lato-Light.ttf);
+}
+
 :root {
   --font: 'Game of Thrones';
+  --font-data: Lato;
 }
 
 .font {
@@ -12,4 +18,9 @@
   font-weight: 100;
   color: #fff;
   letter-spacing: 1.9px;
+}
+
+.font-data {
+  font-family: var(--font-data);
+  font-size: 16px;
 }
