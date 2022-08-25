@@ -12,6 +12,8 @@ import { GalleryHousesComponent } from './shared/component/gallery-houses/galler
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
 import { SearchComponent } from './shared/component/search/search.component';
+import { SimplebarAngularModule } from 'simplebar-angular';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,14 @@ import { SearchComponent } from './shared/component/search/search.component';
     GalleryHousesComponent,
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
-    SearchComponent
-
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-
+    SimplebarAngularModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
