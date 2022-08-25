@@ -34,8 +34,8 @@ export class SearchComponent implements OnInit {
 
   ngOnInit (): void {}
 
-  sendMessage() {
-    console.log(this.message)
-  }
+  // sendMessage() {
+  //   console.log(this.message)
+  // }
 }
 

@@ -15,6 +15,7 @@ import { SearchComponent } from './shared/component/search/search.component';
 import { HouseDetailPageComponent } from './pages/house-detail-page/house-detail-page.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { FormsModule } from '@angular/forms';
+import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
     SearchComponent,
-    HouseDetailPageComponent
+    HouseDetailPageComponent,
+    FilterCharactersPipe
   ],
   imports: [
     BrowserModule,
