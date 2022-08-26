@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CharactersService } from './../../shared/services/characters.service'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-chronology',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chronology.component.scss']
 })
 export class ChronologyComponent implements OnInit {
+  characters: any
+  charactersAge: any
 
-  constructor() { }
+  constructor (private charactersService: CharactersService) {}
 
-  ngOnInit(): void {
+  ngOnInit (): void {
+    this.charactersService.getCharacters().subscribe((res: any) => {
+      const firstFilter = res.filter((el: any) => el.age != null)
+      const secondFilter = firstFilter.filter((el: any) => el.age.age != null)
+
+      this.charactersAge = secondFilter.sort((a: any, b: any) => {
+        if (a.age.age > b.age.age) {
+          return 1
+        }
+        if (a.age.age < b.age.age) {
+          return -1
+        }
+        return 0
+      })
+    })
   }
-
 }
+

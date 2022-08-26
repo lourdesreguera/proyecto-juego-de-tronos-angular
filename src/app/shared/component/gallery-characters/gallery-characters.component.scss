@@ -1,6 +1,8 @@
 main {
   height: 100vh;
   overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 ngx-simplebar {
@@ -9,6 +11,22 @@ ngx-simplebar {
 
 ::ng-deep .simplebar-scrollbar::before {
   background-color: #fff !important;
+}
+
+input {
+  width: 500px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  padding: 10px 0 10px 37px;
+  color: #fff;
+}
+
+.logo-search {
+  position: absolute;
+  top: 30px;
+  height: 15px;
 }
 
 .header__container {
@@ -22,11 +40,10 @@ ngx-simplebar {
 }
 
 .gallery-characters {
-    display: flex;
-    flex-wrap: wrap;
-    color: #fff;
-    max-width: 1300px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  margin-right: 40px;
 }
 
 .gallery-characters__card {
@@ -73,4 +90,3 @@ ngx-simplebar {
 .default {
   bottom: 50%;
 }
-

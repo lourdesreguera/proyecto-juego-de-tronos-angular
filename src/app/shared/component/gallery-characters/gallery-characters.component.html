@@ -1,6 +1,7 @@
 <main class="characters">
   <div class="header__container">
-    <input type="text" name="filterPost" [(ngModel)]="filterPost">
+    <input type="text" name="filterPost" [(ngModel)]="filterPost" placeholder="Buscar...">
+    <img src="../../../../assets/images/search.svg" class="logo-search">
     <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
   </div>
   <ngx-simplebar [options]="options">
