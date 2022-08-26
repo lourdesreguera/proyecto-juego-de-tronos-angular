@@ -8,6 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GalleryHousesComponent implements OnInit {
 
   @Input() houses: any;
+  filterPost = "";
+
+  options = { autoHide: false, scrollbarMinSize: 100 };
 
   imgDefault = '../../../../assets/images/scudo.webp'
 
