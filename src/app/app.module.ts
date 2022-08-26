@@ -14,7 +14,9 @@ import { CharacterDetailPageComponent } from './pages/character-detail-page/char
 import { HouseDetailPageComponent } from './pages/house-detail-page/house-detail-page.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { FormsModule } from '@angular/forms';
+import { FilterHousesPipe } from './shared/pipes/filter-houses.pipe';
 import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +29,12 @@ import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
     GalleryHousesComponent,
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
+    SearchComponent,
+    HouseDetailPageComponent,
+    FilterHousesPipe
     HouseDetailPageComponent,
     FilterCharactersPipe
+
   ],
   imports: [
     BrowserModule,
