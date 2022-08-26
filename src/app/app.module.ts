@@ -29,9 +29,8 @@ import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
     GalleryHousesComponent,
     GalleryCharactersComponent,
     CharacterDetailPageComponent,
-    SearchComponent,
     HouseDetailPageComponent,
-    FilterHousesPipe
+    FilterHousesPipe,
     HouseDetailPageComponent,
     FilterCharactersPipe
 
