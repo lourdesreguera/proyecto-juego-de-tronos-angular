@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core'
 })
 export class GalleryCharactersComponent implements OnInit {
   @Input() characters: any;
+  filterPost = '';
 
   options = { autoHide: false, scrollbarMinSize: 100 };
 
@@ -14,5 +15,6 @@ export class GalleryCharactersComponent implements OnInit {
 
   constructor () {}
 
-  ngOnInit (): void {}
+  ngOnInit (): void {
+  }
 }

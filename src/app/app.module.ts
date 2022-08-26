@@ -11,11 +11,12 @@ import { FooterComponent } from './shared/component/footer/footer.component';
 import { GalleryHousesComponent } from './shared/component/gallery-houses/gallery-houses.component';
 import { GalleryCharactersComponent } from './shared/component/gallery-characters/gallery-characters.component';
 import { CharacterDetailPageComponent } from './pages/character-detail-page/character-detail-page.component';
-import { SearchComponent } from './shared/component/search/search.component';
 import { HouseDetailPageComponent } from './pages/house-detail-page/house-detail-page.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { FormsModule } from '@angular/forms';
 import { FilterHousesPipe } from './shared/pipes/filter-houses.pipe';
+import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +32,9 @@ import { FilterHousesPipe } from './shared/pipes/filter-houses.pipe';
     SearchComponent,
     HouseDetailPageComponent,
     FilterHousesPipe
+    HouseDetailPageComponent,
+    FilterCharactersPipe
+
   ],
   imports: [
     BrowserModule,
