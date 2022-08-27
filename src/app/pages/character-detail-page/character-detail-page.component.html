@@ -5,7 +5,7 @@
   >
   <section class="characterDetails">
     <div class="characterDetails__img">
-      <img src="{{ character.image }}" />
+      <img src="{{ character.image }}" alt="{{character.name}}" />
     </div>
     <h1 class="font">{{ character.name }}</h1>
 
@@ -13,7 +13,12 @@
       <div class="characterDetails__info--text">
         <h2>casa</h2>
         <ngx-simplebar [options]="options">
-          <p class="font-data">{{ character.house }}</p>
+            <img
+              *ngIf="house"
+              src="{{ house[0].logoURL }}"
+              alt="{{ house[0].name }}"
+              class="logo-house"
+            />
         </ngx-simplebar>
       </div>
 

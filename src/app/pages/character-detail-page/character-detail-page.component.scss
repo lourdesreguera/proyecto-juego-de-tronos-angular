@@ -29,12 +29,6 @@ ngx-simplebar {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   h1 {
     font-size: 32px;
     margin: 30px 0 50px 0;
@@ -47,6 +41,16 @@ ngx-simplebar {
   width: 220px;
   margin-top: 30px;
   overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.logo-house {
+  max-width: 100px;
 }
 
 .characterDetails__info {

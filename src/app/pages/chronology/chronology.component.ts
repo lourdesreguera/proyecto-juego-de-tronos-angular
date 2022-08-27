@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core'
 export class ChronologyComponent implements OnInit {
   characters: any
   options = { autoHide: false, scrollbarMinSize: 100 };
+  crono = true;
 
 
   constructor (private charactersService: CharactersService) {}
@@ -31,7 +32,15 @@ export class ChronologyComponent implements OnInit {
   }
 
   reverseAge () {
-    this.characters.reverse()
+    const button : any = document.querySelector('.chronology__button');
+    this.crono = !this.crono;
+
+    if(this.crono) {
+      button.innerHTML = '0'
+    } else {
+      button.innerHTML = '100'
+    }
+    this.characters.reverse();
   }
 }
 
