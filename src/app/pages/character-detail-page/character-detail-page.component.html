@@ -1,7 +1,7 @@
 <section class="characterDetails__container">
   <a routerLink="/characters" class="back">
     <img src="../../../assets/images/arrow.svg" />
-    <p class="font-data">Volver</p></a
+    <p class="font-data">{{"VOLVER" | translate}}</p></a
   >
   <section class="characterDetails">
     <div class="characterDetails__img">
@@ -11,7 +11,7 @@
 
     <div class="characterDetails__info">
       <div class="characterDetails__info--text">
-        <h2>casa</h2>
+        <h2>{{"CASA" | translate}}</h2>
         <ngx-simplebar [options]="options">
             <img
               *ngIf="house"
@@ -23,7 +23,7 @@
       </div>
 
       <div class="characterDetails__info--text">
-        <h2>alianzas</h2>
+        <h2>{{"ALIANZAS" | translate}}</h2>
         <ngx-simplebar [options]="options">
           <p *ngFor="let allegiance of character.allegiances" class="font-data">
             {{ allegiance }}
@@ -32,7 +32,7 @@
       </div>
 
       <div class="characterDetails__info--text">
-        <h2>apariciones</h2>
+        <h2>{{"APARICIONES" | translate}}</h2>
         <ngx-simplebar [options]="options">
           <p *ngFor="let appearance of character.appearances" class="font-data">
             {{ appearance }}
@@ -41,14 +41,14 @@
       </div>
 
       <div class="characterDetails__info--text">
-        <h2>padre</h2>
+        <h2>{{"FATHER" | translate}}</h2>
         <ngx-simplebar [options]="options">
           <p class="font-data">{{ character.father }}</p>
         </ngx-simplebar>
       </div>
 
       <div class="characterDetails__info--text">
-        <h2>hermanos</h2>
+        <h2>{{"HERMANOS" | translate}}</h2>
         <ngx-simplebar [options]="options">
           <p *ngFor="let sibling of character.siblings" class="font-data">
             {{ sibling }}
@@ -57,7 +57,7 @@
       </div>
 
       <div class="characterDetails__info--text">
-        <h2>titulos</h2>
+        <h2>{{"TITLES" | translate}}</h2>
         <ngx-simplebar [options]="options">
           <p *ngFor="let title of character.titles" class="font-data">
             {{ title }}

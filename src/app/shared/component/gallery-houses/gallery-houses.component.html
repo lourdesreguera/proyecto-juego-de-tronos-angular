@@ -1,23 +1,25 @@
 <div class="container">
-<div class="header__container">
-    <input type="text" name="filterPost" [(ngModel)]="filterPost" placeholder="Buscar...">
-    <img src="../../../../assets/images/search.svg" class="logo-search">
+  <div class="header__container">
+    <input
+      type="text"
+      name="filterPost"
+      [(ngModel)]="filterPost"
+      placeholder="{{ 'BUSCAR' | translate }}"
+    />
+    <img src="../../../../assets/images/search.svg" class="logo-search" />
     <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
-</div>
-<ngx-simplebar [options]="options">
-<section class="gallery-houses">
-    <div
+  </div>
+  <ngx-simplebar [options]="options">
+    <section class="gallery-houses">
+      <div
         *ngFor="let house of houses | filterHouses: filterPost"
         class="gallery-houses__card"
-    >
-
-        <!-- <img src="{{ house.logoURL }}" /> -->
-
-        <img *ngIf="!house.logoURL" src="{{imgDefault}}" />
-        <img  *ngIf="house.logoURL" src="{{ house.logoURL }}" />
+      >
+        <img *ngIf="!house.logoURL" src="{{ imgDefault }}" />
+        <img *ngIf="house.logoURL" src="{{ house.logoURL }}" />
         <a routerLink="/houses/{{ house.name }}">{{ house.name }}</a>
-  </div>
-</section>
-</ngx-simplebar>  
+      </div>
+    </section>
+  </ngx-simplebar>
 </div>
 <app-footer></app-footer>

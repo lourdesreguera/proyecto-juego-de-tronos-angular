@@ -1,6 +1,6 @@
 <a routerLink="/houses" class="back">
     <img src="../../../assets/images/arrow.svg" />
-    <p class="font-data">Volver</p></a>
+    <p class="font-data">{{"VOLVER" | translate}}</p></a>
 <section class="houseDetails">
     <div class="houseDetails__img">
         <img *ngIf="!house[0].logoURL" src="{{imgDefault}}" />
@@ -10,27 +10,27 @@
     <section>
         <div class="houses__info">
             <div class="houseDetails__info--text">
-                <h2>LEMA</h2>
+                <h2>{{"LEMA" | translate}}</h2>
                 <p class="font-data">{{house[0].words}}</p>
             </div>
             <div class="houseDetails__info--text">
-                <h2>SEDE</h2>
+                <h2>{{"SEDE" | translate}}</h2>
                 <p class="font-data" *ngFor="let item of house[0].seat" >{{item}}</p>
             </div>
             <div class="houseDetails__info--text">
-                <h2>REGION</h2>
+                <h2>{{"REGION" | translate}}</h2>
                 <p class="font-data" *ngFor="let item of house[0].religion">{{item}}</p>
             </div>
             <div class="houseDetails__info--text">
-                <h2>ALIANZAS</h2>
+                <h2>{{"ALIANZAS" | translate}}</h2>
                 <p class="font-data" *ngFor="let item of house[0].allegiance">{{item}}</p>
             </div>
             <div class="houseDetails__info--text">
-                <h2>RELIGIONES</h2>
+                <h2>{{"RELIGIONES" | translate}}</h2>
                 <p class="font-data" *ngFor="let item of house[0].religion">{{item}}</p>
             </div>
             <div class="houseDetails__info--text">
-                <h2>FUNDACION</h2>
+                <h2>{{"FUNDACION" | translate}}</h2>
                 <p class="font-data">{{house[0].createdAt}}</p>
         </div>
     </div>
