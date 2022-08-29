@@ -12,3 +12,4 @@ export class HousesService {
     return this.http.get("https://api.got.show/api/show/houses")
   }
 }
+
