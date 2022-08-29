@@ -39,7 +39,6 @@ import { FilterCharactersPipe } from './shared/pipes/filter-characters.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-
     SimplebarAngularModule,
     FormsModule
   ],

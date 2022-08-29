@@ -1,0 +1,89 @@
+main {
+  height: 100vh;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 30px;
+  }
+}
+
+ngx-simplebar {
+  height: 78vh;
+}
+
+::ng-deep .simplebar-scrollbar::before {
+  background-color: #fff !important;
+}
+
+.chronology__button {
+  position: fixed;
+  left: 50%;
+  top: 22px;
+  transform: translateX(-29px);
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.chronology-cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+
+.chronology-card {
+  width: calc(50% - 4px);
+  p {
+    font-size: 16px;
+  }
+}
+
+.chronology-card__image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.line {
+  width: 2px;
+  position: fixed;
+  height: 78vh;
+  left: 50%;
+  transform: translateX(-5px);
+  background-color: #fff;
+}
+
+.par {
+  border-top: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.impar {
+  border-top: 2px solid #fff;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

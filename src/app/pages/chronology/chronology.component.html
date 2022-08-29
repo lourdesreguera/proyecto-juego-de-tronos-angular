@@ -1,3 +1,24 @@
-<div *ngFor="let item of charactersAge" style="margin: 20px">
-  <p>{{item.age.age}} {{item.name}}</p>
-</div>
+<main>
+  <div class="header__container">
+    <a routerLink="/"><img src="../../../../assets/images/home.svg" /></a>
+  </div>
+  <ngx-simplebar [options]="options">
+    <button (click)="reverseAge()" class="chronology__button">0</button>
+    <div class="line">|</div>
+      <div class="chronology-cards">
+        <div
+          *ngFor="let item of characters; let i = index"
+          class="chronology-card"
+        >
+          <div [ngClass]="{ par: i % 2 == 0, impar: i % 2 != 0 }">
+            <p>{{ item.age.age }}</p>
+            <h3>{{ item.name }}</h3>
+            <div class="chronology-card__image">
+              <img src="{{ item.image }}" alt="{{ item.name }}" />
+            </div>
+          </div>
+        </div>
+      </div>
+  </ngx-simplebar>
+</main>
+<app-footer></app-footer>

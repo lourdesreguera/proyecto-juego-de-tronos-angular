@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core'
 })
 export class ChronologyComponent implements OnInit {
   characters: any
-  charactersAge: any
+  options = { autoHide: false, scrollbarMinSize: 100 };
+  crono = true;
+
 
   constructor (private charactersService: CharactersService) {}
 
@@ -17,7 +19,7 @@ export class ChronologyComponent implements OnInit {
       const firstFilter = res.filter((el: any) => el.age != null)
       const secondFilter = firstFilter.filter((el: any) => el.age.age != null)
 
-      this.charactersAge = secondFilter.sort((a: any, b: any) => {
+      this.characters = secondFilter.sort((a: any, b: any) => {
         if (a.age.age > b.age.age) {
           return 1
         }
@@ -27,6 +29,18 @@ export class ChronologyComponent implements OnInit {
         return 0
       })
     })
+  }
+
+  reverseAge () {
+    const button : any = document.querySelector('.chronology__button');
+    this.crono = !this.crono;
+
+    if(this.crono) {
+      button.innerHTML = '0'
+    } else {
+      button.innerHTML = '100'
+    }
+    this.characters.reverse();
   }
 }
 
