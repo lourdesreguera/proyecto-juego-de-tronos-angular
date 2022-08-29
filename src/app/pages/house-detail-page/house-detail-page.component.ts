@@ -10,6 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class HouseDetailPageComponent implements OnInit {
     house: any = [];
 
+    imgDefault = '../../../../assets/images/scudo.webp'
+
+
   constructor(
     private route: ActivatedRoute,
     private houseDetailService: HouseDetailService

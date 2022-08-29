@@ -1,14 +1,33 @@
 .container{
   height: 100vh;
   overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 ngx-simplebar {
-  height: 100vh;
+  height: 78vh;
 }
 
 ::ng-deep .simplebar-scrollbar::before {
   background-color: #fff !important;
+}
+
+input {
+  width: 500px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  padding: 10px 0 10px 37px;
+  color: #fff;
+}
+
+
+.logo-search {
+  position: absolute;
+  top: 30px;
+  height: 15px;
 }
 
 
@@ -27,14 +46,13 @@ ngx-simplebar {
     flex-wrap: wrap;
     color: #fff;
     flex-direction: row;
-    max-width: 1300px;
-    margin: 0 auto;
     text-align: center;
     justify-content: center;
+    margin-right: 40px;
 }
 
 .gallery-houses__card{
-     width: calc(16% - 20px);
+    width: calc(16% - 20px);
     padding: 14px;
     text-align: center;
 
@@ -51,7 +69,7 @@ a{
     letter-spacing: normal;
     color: var(--white);
     text-decoration: none;
-    width: 100%;
     text-align: center;
+    cursor: pointer;
 
 }
