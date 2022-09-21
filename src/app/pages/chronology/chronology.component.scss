@@ -23,6 +23,12 @@ ngx-simplebar {
   background-color: #fff !important;
 }
 
+.home-logo {
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
 .chronology__button {
   position: fixed;
   left: 50%;

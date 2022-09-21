@@ -2,6 +2,9 @@
   position: fixed;
   top: 27px;
   right: 12%;
+  @media (max-width: 576px) {
+    right: 20px;
+  }
   img {
     width: 30px;
     border-radius: 2px;

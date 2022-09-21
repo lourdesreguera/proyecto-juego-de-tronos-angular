@@ -1,5 +1,8 @@
 ngx-simplebar {
   height: 140px;
+  @media (max-width: 1000px) {
+    height: 100%;;
+  }
 }
 
 ::ng-deep .simplebar-scrollbar::before {
@@ -21,6 +24,9 @@ ngx-simplebar {
 .characterDetails__container {
   height: 100vh;
   overflow: hidden;
+  @media (max-width: 1000px) {
+    overflow: unset;
+  }
 }
 
 .characterDetails {
@@ -57,6 +63,9 @@ ngx-simplebar {
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 .characterDetails__info--text {
@@ -66,5 +75,11 @@ ngx-simplebar {
   h2 {
     font-weight: 100;
     margin-bottom: 25px;
+    @media (max-width: 600px) {
+      margin: 50px 0 10px 0;
+    }
+  }
+  @media (max-width: 1000px) {
+    width: 90%;
   }
 }

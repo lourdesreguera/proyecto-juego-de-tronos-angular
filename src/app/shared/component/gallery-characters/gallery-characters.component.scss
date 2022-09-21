@@ -21,6 +21,12 @@ input {
   position: relative;
   padding: 10px 0 10px 37px;
   color: #fff;
+  @media (max-width: 800px) {
+    width: 300px;
+  }
+  @media (max-width: 600px) {
+    width: 150px;
+  }
 }
 
 .logo-search {
@@ -39,11 +45,20 @@ input {
   }
 }
 
+.logo-home {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
 .gallery-characters {
   display: flex;
   flex-wrap: wrap;
   color: #fff;
   margin-right: 40px;
+  @media (max-width: 576px) {
+    margin-right: 10px;
+  }
 }
 
 .gallery-characters__card {
@@ -52,6 +67,12 @@ input {
   height: 300px;
   overflow: hidden;
   position: relative;
+  @media (max-width: 1000px) {
+    width: calc(33.333% - 24px);
+  }
+  @media (max-width: 600px) {
+    width: calc(50% - 24px);
+  }
   &:hover {
     p {
       opacity: 100;
